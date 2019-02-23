@@ -1,6 +1,12 @@
 $(document).ready(function() {
     
- 
+    var userTotal =0;
+    var wins =0;
+    var losses =0;
+
+    $('#wins').text(wins);
+    $('#losses').text(losses);
+
     var computerPick = Math.floor(Math.random() * (121 - 19)) + 19;
     console.log(computerPick);
     $("#computer-pick").text(computerPick);
@@ -11,25 +17,7 @@ $(document).ready(function() {
     var black = Math.floor(Math.random() * (13-1)) +1;
     console.log("Your Pick: " + purple + white + green + black);
 
-    var userTotal =0;
-    var wins =0;
-    var losses =0;
 
-    $('#wins').text(wins);
-    $('#losses').text(losses);
-
-    function reset() {
-
-        computerPick = Math.floor(Math.random() * (121 - 19)) + 19;
-        $("#computer-pick").text(computerPick);
-        var purple = Math.floor(Math.random() * (13-1)) +1;
-        var white = Math.floor(Math.random() * (13-1)) +1;
-        var green = Math.floor(Math.random() * (13-1)) +1;
-        var black = Math.floor(Math.random() * (13-1)) +1;
-
-        userTotal = 0;
-        $("your-score").text(userTotal);
-        }
 
     function winner() {
         $("#your-score").html("You won!");
@@ -87,5 +75,18 @@ $(document).ready(function() {
         } else if (userTotal > computerPick) {
             loser();
         }
-    })  
+    })      
+    
+    function reset() {
+
+        computerPick = Math.floor(Math.random() * (121 - 19)) + 19;
+        $("#computer-pick").text(computerPick);
+        var purple = Math.floor(Math.random() * (13-1)) +1;
+        var white = Math.floor(Math.random() * (13-1)) +1;
+        var green = Math.floor(Math.random() * (13-1)) +1;
+        var black = Math.floor(Math.random() * (13-1)) +1;
+
+        userTotal = 0;
+        $("your-score").text(userTotal);
+        }
 });
