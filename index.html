@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystals Collector</title>
+    
+
+    <!-- <script type="text/javascript" src="../unit-4-game/assets/javascript/game.js"></script> -->
+    <link rel="stylesheet" href="../unit-4-game/assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="rules">
+            <h1 style="background-color: #ffffff">Crystals Collector!</h1>
+            <p>You will be given a random number at the start of the game.</p>
+            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+            <p>You win the game by matching your total score to random number. You lose the game if your total score goes above the random number.</p>
+            <p>THe value of each crystal is hidden from you until you click on it.</p>
+            <p>Each time when the game starts, the game wil change the values of each crystal.</p>
+          </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-2">
+              <h3 class="card-header">Try to match this number:</h3>
+              <div class="card-body text-center">
+                <h1 id="computer-pick">???</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+              <div class="card mb-2">
+                <h3 class="card-header">Your total score:</h3>
+                <div class="card-body text-center">
+                  <h1 id="your-score">???</h1>
+                </div>
+              </div>
+            </div>
+        </div>
+    
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card mb-2">
+              <h3 class="card-header">Make your picks:</h3>
+              <div class="card-body text-center">
+                <button id="button-1" class="btn btn-light btn-choice">
+                    <img src="../unit-4-game/assets/images/amethyst.jpg">
+                </button>
+                <button id="button-2" class="btn btn-light btn-choice">
+                    <img src="../unit-4-game/assets/images/apophyllite.jpg">
+                </button>
+                <button id="button-3" class="btn btn-light btn-choice">
+                    <img src="../unit-4-game/assets/images/azurite.jpg">
+                </button>
+                <button id="button-4" class="btn btn-light btn-choice">
+                    <img src="../unit-4-game/assets/images/blacktourmaline.jpg">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6">
+              <div class="card mb-2">
+                <h3 class="card-header">Wins</h3>
+                <div class="card-body text-center">
+                  <h1 id="wins">???</h1>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md-6">
+                <div class="card mb-2">
+                  <h3 class="card-header">Losses</h3>
+                  <div class="card-body text-center">
+                    <h1 id="losses">???</h1>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+      </div>
+
+      
+    
+  <script type="text/javascript" src="../unit-4-game/assets/javascript/game.js"></script>
+
+
+</script>
+</body>
+</html>
